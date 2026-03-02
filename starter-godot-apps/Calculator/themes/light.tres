@@ -11,6 +11,29 @@ bg_color = Color(0.9019608, 0.92941177, 0.9490196, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cimpl"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vhl38"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 0.365, 0.365, 1)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qub42"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jtsux"]
+bg_color = Color(0.9411765, 0.95686275, 0.96862745, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qf5hw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75eb8"]
+bg_color = Color(0.9411765, 0.95686275, 0.96862745, 1)
+
 [sub_resource type="Gradient" id="Gradient_wq6yc"]
 colors = PackedColorArray(0.7294118, 0.827451, 0.87058824, 1, 0.9019608, 0.9254902, 0.9411765, 1)
 
@@ -36,6 +59,31 @@ Button/fonts/font = ExtResource("1_qf5hw")
 Button/styles/focus = SubResource("StyleBoxFlat_qe7jt")
 Button/styles/hover = SubResource("StyleBoxFlat_qf5hw")
 Button/styles/normal = SubResource("StyleBoxEmpty_cimpl")
+FunctionButton/base_type = &"Button"
+FunctionButton/colors/font_color = Color(0.42745098, 0.7372549, 0.72156864, 1)
+FunctionButton/colors/font_disabled_color = Color(0, 0, 0, 1)
+FunctionButton/colors/font_focus_color = Color(0, 0, 0, 1)
+FunctionButton/colors/font_hover_color = Color(0, 0, 0, 1)
+FunctionButton/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+FunctionButton/colors/font_outline_color = Color(0, 0, 0, 1)
+FunctionButton/colors/font_pressed_color = Color(0, 0, 0, 1)
+FunctionButton/colors/icon_disabled_color = Color(0, 0, 0, 1)
+FunctionButton/colors/icon_focus_color = Color(0, 0, 0, 1)
+FunctionButton/colors/icon_hover_color = Color(0, 0, 0, 1)
+FunctionButton/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+FunctionButton/colors/icon_normal_color = Color(0, 0, 0, 1)
+FunctionButton/colors/icon_pressed_color = Color(0, 0, 0, 1)
+FunctionButton/constants/align_to_largest_stylebox = 0
+FunctionButton/constants/h_separation = 0
+FunctionButton/constants/icon_max_width = 0
+FunctionButton/constants/outline_size = 0
+FunctionButton/font_sizes/font_size = 40
+FunctionButton/fonts/font = ExtResource("1_qf5hw")
+FunctionButton/styles/disabled = SubResource("StyleBoxFlat_vhl38")
+FunctionButton/styles/focus = SubResource("StyleBoxFlat_qub42")
+FunctionButton/styles/hover = SubResource("StyleBoxFlat_jtsux")
+FunctionButton/styles/normal = SubResource("StyleBoxEmpty_qf5hw")
+FunctionButton/styles/pressed = SubResource("StyleBoxFlat_75eb8")
 GridContainer/constants/h_separation = 0
 GridContainer/constants/v_separation = 0
 Label/colors/font_color = Color(0.27058825, 0.27058825, 0.36862746, 1)

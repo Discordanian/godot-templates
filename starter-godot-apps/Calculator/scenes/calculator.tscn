@@ -69,6 +69,7 @@ text = "%"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_type_variation = &"FunctionButton"
 text = "/"
 
 [node name="Button5" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=436743294]
@@ -93,6 +94,7 @@ text = "9"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_type_variation = &"FunctionButton"
 text = "*"
 
 [node name="Button9" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1240062368]
@@ -117,6 +119,7 @@ text = "6"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_type_variation = &"FunctionButton"
 text = "-"
 
 [node name="Button13" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=720533330]
@@ -141,6 +144,7 @@ text = "3"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_type_variation = &"FunctionButton"
 text = "+"
 
 [node name="Spacer" type="Control" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=144695598]
@@ -174,6 +178,7 @@ text = "."
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_type_variation = &"FunctionButton"
 text = "="
 
 [connection signal="resized" from="VBoxContainer/PanelContainer/GridContainer/ZeroButtonContainer/ZeroButton" to="." method="_on_zero_button_resized"]
