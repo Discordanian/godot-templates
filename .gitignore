@@ -2,8 +2,9 @@
 .godot/
 .nomedia
 
-# Godot-specific ignores
+# Godot-specific ignores (patterns apply to all subdirectories)
 .import/
+*.tmp
 export.cfg
 export_credentials.cfg
 
