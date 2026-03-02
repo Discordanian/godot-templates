@@ -7,5 +7,11 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
+
+
+func _on_zero_button_resized() -> void:
+	@warning_ignore("integer_division")
+	%ZeroButton.offset_left = -get_window().size.x / 4
+

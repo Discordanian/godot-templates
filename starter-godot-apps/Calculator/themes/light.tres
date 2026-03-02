@@ -1,0 +1,47 @@
+[gd_resource type="Theme" format=3 uid="uid://b1ql8w675yovm"]
+
+[ext_resource type="FontFile" uid="uid://c2u22t00570gg" path="res://fonts/Unageo-Bold.ttf" id="1_cimpl"]
+[ext_resource type="FontFile" uid="uid://dhucrdogadun6" path="res://fonts/Unageo-Medium.ttf" id="1_qf5hw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe7jt"]
+bg_color = Color(0.87058824, 0.90588236, 0.93333334, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qf5hw"]
+bg_color = Color(0.9019608, 0.92941177, 0.9490196, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cimpl"]
+
+[sub_resource type="Gradient" id="Gradient_wq6yc"]
+colors = PackedColorArray(0.7294118, 0.827451, 0.87058824, 1, 0.9019608, 0.9254902, 0.9411765, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cimpl"]
+gradient = SubResource("Gradient_wq6yc")
+fill_from = Vector2(0.6217949, 0.5769231)
+fill_to = Vector2(0.724359, 0.14529915)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wq6yc"]
+texture = SubResource("GradientTexture2D_cimpl")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cimpl"]
+bg_color = Color(0.9411765, 0.95686275, 0.96862745, 1)
+shadow_color = Color(0, 0, 0, 0.05882353)
+shadow_size = 10
+
+[resource]
+Button/colors/font_color = Color(0.3372549, 0.34117648, 0.4117647, 1)
+Button/colors/font_focus_color = Color(0.30588236, 0.30980393, 0.3764706, 1)
+Button/colors/font_hover_color = Color(0.3372549, 0.34117648, 0.4117647, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_qf5hw")
+Button/styles/focus = SubResource("StyleBoxFlat_qe7jt")
+Button/styles/hover = SubResource("StyleBoxFlat_qf5hw")
+Button/styles/normal = SubResource("StyleBoxEmpty_cimpl")
+GridContainer/constants/h_separation = 0
+GridContainer/constants/v_separation = 0
+Label/colors/font_color = Color(0.27058825, 0.27058825, 0.36862746, 1)
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("1_cimpl")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_right = 20
+Panel/styles/panel = SubResource("StyleBoxTexture_wq6yc")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_cimpl")

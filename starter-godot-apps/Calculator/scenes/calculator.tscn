@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bexhxck8fph3u"]
 
 [ext_resource type="Script" uid="uid://52wvbr3y71ex" path="res://scripts/calculator.gd" id="1_47tay"]
+[ext_resource type="Theme" uid="uid://b1ql8w675yovm" path="res://themes/light.tres" id="1_iofbv"]
 
 [node name="Calculator" type="Control" unique_id=726340450]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_iofbv")
 script = ExtResource("1_47tay")
 
 [node name="BG" type="Panel" parent="." unique_id=612163923]
@@ -173,3 +175,5 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "="
+
+[connection signal="resized" from="VBoxContainer/PanelContainer/GridContainer/ZeroButtonContainer/ZeroButton" to="." method="_on_zero_button_resized"]
