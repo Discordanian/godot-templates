@@ -68,15 +68,6 @@ func non_number_button_pressed(text: String):
 		temp_nums.append(str(num))
 		label.text = "".join(temp_nums)
 
-	if text == "=":
-		var expression = Expression.new()
-		expression.parse("".join(fin_nums))
-		var result = expression.execute([], null, true)
-		label.text = str(result)
-		fin_nums.clear()
-		temp_nums.clear()
-		temp_nums.append(str(result))
-
 
 func _on_zero_button_resized() -> void:
 	@warning_ignore("integer_division")
